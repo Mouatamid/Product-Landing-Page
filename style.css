@@ -1,0 +1,213 @@
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+}
+.container{
+  margin-top: 100px;
+}
+#header{
+  padding: 1em 0em;
+  min-height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  background-color: #eee;
+}
+#header #header-img{
+  float: left;
+  width: 250px;
+
+}
+#header #nav-bar{
+  float: right;
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-right: 4em;
+}
+.container{
+  margin-top: 100px;
+  text-align: center;
+}
+#header #nav-bar .nav-link{
+  padding: 0em 1em;
+  color: #000;
+  text-decoration: none;
+
+}
+.container h2{
+  margin-top: 5em;
+}
+#form{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: auto;
+}
+#form #email{
+  width: 65%;
+  padding: 0.5em;
+  margin: auto;
+}
+#form #submit{
+  width: 100%;
+  max-width: 150px;
+  margin: auto;
+  padding: 0.5em 0em;
+  margin-top: 1em;
+  background-color: #f1c40f;
+  font-weight: 900;
+  font-size: 1em;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+#features-list{
+  margin: auto;
+}
+#features-list div.feature{
+  text-align: left;
+  margin: 3em;
+  
+  
+}
+#features-list div.feature .icon{
+  display: inline;
+  width: 20%;
+  float: left;
+  height: 100%;
+  color: darkorange;
+  text-align: center;
+}
+#features-list div.feature h2,#features-list div.feature p{
+  margin: 0;
+}
+.container iframe{
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  margin-top: 2em;
+}
+#pricing{
+  display: flex;
+  flex-flow: row wrap;
+  margin: 6em auto;
+  width: 90%;
+  justify-content: center;
+}
+#pricing .select-pricing{
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid #000;
+  width: 30%;
+  margin: 1em 1em;
+}
+#pricing .select-pricing .title{
+  width: 99%;
+  padding: 1em 0em ;
+  background-color: #ddd;
+  font-weight: 700;
+  margin: auto;
+}
+#pricing .select-pricing .price{
+  margin-top: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+#pricing .select-pricing p{
+  width: 50%;
+  margin: 1em auto;
+  height: 70%;
+}
+#pricing .select-pricing .select{
+  margin: 20px auto;
+  font-weight: 400;
+  background-color: #f1c40f;
+  padding: 1em 20px;
+  color: #000;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 1s;
+}
+#pricing .select-pricing .select:hover{
+  background-color: orange;
+}
+footer{
+  width: 75%;
+  background-color: #ddd;
+  margin: 0 auto;
+  padding: 5px 20px;
+}
+footer .footer{
+  display: flex;
+  list-style-type: none;
+  float: right;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0;
+}
+footer .footer li{
+  color: #000;
+  margin: 0 1em;
+}
+footer .footer li a{
+  color: #000;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+footer p{
+  width: 97%;
+  text-align: right;
+  padding: 1em;
+  font-size: 0.9em;
+  color: #444;
+}
+@media(max-width:600px){
+  #header #header-img{
+    width: 80%;
+    float: none;
+    margin: 0 auto;
+  }
+  #header #nav-bar{
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+  }
+  .container{
+    margin-top: 160px;
+  }
+  #form{
+    width: 80%;
+  }
+  #form #email{
+    width: 100%;
+    padding: 0.7em;
+  }
+  #features-list div.feature .icon {
+    display: none;
+  }
+  #features-list div.feature{
+    text-align: center;
+    margin: 2em 0em;
+  }
+  #pricing .select-pricing{
+    width: 75%;
+    margin: 1em auto ;
+    
+  }
+  footer{
+    width: 90%;
+  }
+
+
+}
